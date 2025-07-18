@@ -32,7 +32,7 @@ const Header = () => {
             <a href="#contact-us">Contact Us</a>
             <a href="#get-started">Get Started</a>
             <button className="button">
-              <Link to ="./User/login">Log-in</Link>
+              <Link to ="/Login">Log-in</Link>
             </button>
           </div>
         </OutsideClickHandler>
