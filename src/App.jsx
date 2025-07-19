@@ -8,6 +8,7 @@ import Contact from './components/Contact/Contact';
 import GetStarted from './components/GetStarted/GetStarted';
 import Footer from './components/Footer/Footer';
 import Login from './components/Login/Login';
+import SignUp from './components/Register/Register';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function Home() {
@@ -34,6 +35,7 @@ function App(){
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/Login" element={<Login />} />
+        <Route path="/Register" element={<SignUp />} />
       </Routes>
     </Router>
   );
