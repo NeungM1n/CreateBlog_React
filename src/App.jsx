@@ -20,8 +20,8 @@ function Home() {
           <Hero />
         </div>
         <Companies />
-        <Residencies />
         <Value />
+        <Residencies />
         <Contact />
         <GetStarted />
         <Footer />

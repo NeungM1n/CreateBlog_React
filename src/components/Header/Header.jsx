@@ -4,17 +4,18 @@ import { BiMenuAltRight } from "react-icons/bi";
 import { getMenuStyles } from "../../utils/common";
 import useHeaderColor from "../../hooks/useHeaderColor";
 import OutsideClickHandler from "react-outside-click-handler";
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const Header = () => {
   const [menuOpened, setMenuOpened] = useState(false);
   const headerColor = useHeaderColor();
+  const navigate = useNavigate();
 
   return (
     <section className="h-wrapper" style={{ background: headerColor }}>
       <div className="flexCenter innerWidth paddings h-container">
         {/* logo */}
-        <img src="./logo.png" alt="logo" width={100} />
+        <img src="./logo.png" onClick={()=>navigate("/")} style={{cursor:"pointer"}} alt="logo" width={100} />
 
         {/* menu */}
         <OutsideClickHandler
@@ -27,10 +28,10 @@ const Header = () => {
             className="flexCenter h-menu"
             style={getMenuStyles(menuOpened)}
           >
-            <a href="#residencies">Residencies</a>
-            <a href="#value">Our Value</a>
-            <a href="#contact-us">Contact Us</a>
-            <a href="#get-started">Get Started</a>
+            <a href="#introduction">Introduction</a>
+            <a href="#development">Devolopments</a>
+            <a href="#skill">Skills</a>
+            <a href="#contact">Contact</a>
             <button className="button">
               <Link to ="/Login">Log-in</Link>
             </button>
