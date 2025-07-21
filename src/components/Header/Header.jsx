@@ -15,7 +15,7 @@ const Header = () => {
     <section className="h-wrapper" style={{ background: headerColor }}>
       <div className="flexCenter innerWidth paddings h-container">
         {/* logo */}
-        <img src="./logo.png" onClick={()=>navigate("/")} style={{cursor:"pointer"}} alt="logo" width={100} />
+        <img src="./logo.png" onClick={() => window.location.reload()} style={{cursor:"pointer"}} alt="f5" width={100} />
 
         {/* menu */}
         <OutsideClickHandler

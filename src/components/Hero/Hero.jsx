@@ -2,7 +2,19 @@ import "./Hero.css";
 import { HiLocationMarker } from "react-icons/hi";
 import CountUp from "react-countup";
 import { motion } from "framer-motion";
+import React, { useState } from "react";
+
 const Hero = () => {
+  const [query, setQuery] = useState("");
+
+  const handleSearch = () => {
+    if (!query.trim()) return;
+    const url = `https://www.google.com/search?q=${encodeURIComponent(query)}`;
+    window.open(url, "_blank");
+
+    setQuery("");
+  };
+
   return (
     <section className="hero-wrapper">
       <div className="paddings innerWidth flexCenter hero-container">
@@ -11,12 +23,12 @@ const Hero = () => {
           <div className="hero-title">
             <div className="orange-circle" />
             <motion.h1
-            initial={{ y: "2rem", opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{
-              duration: 2,
-              type: "ease-in",
-            }}
+              initial={{ y: "2rem", opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{
+                duration: 2,
+                type: "ease-in",
+              }}
             >
               NeungMin <br />
               My
@@ -30,8 +42,12 @@ const Hero = () => {
 
           <div className="flexCenter search-bar">
             <HiLocationMarker color="var(--blue)" size={25} />
-            <input type="text" />
-            <button className="button">Search</button>
+            <input
+              type="text"
+              value={query}
+              onChange={(e) => setQuery(e.target.value)}
+            />
+            <button className="button" onClick={handleSearch}>Search</button>
           </div>
 
           <div className="flexCenter stats">
