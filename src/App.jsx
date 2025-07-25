@@ -19,12 +19,11 @@ function Home() {
           <Header />
           <Hero />
         </div>
-        <Companies />
+        <br/>
         <Value />
         <Residencies />
         <Contact />
         <GetStarted />
-        <Footer />
       </div>
   );
 }

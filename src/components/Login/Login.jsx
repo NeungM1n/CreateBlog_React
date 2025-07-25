@@ -4,6 +4,7 @@ import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../Config/firebase"; // 경로 확인 필요
 import { toast } from "react-toastify";
 import { useNavigate } from "react-router-dom";
+import './Login.css'
 // import SignInwithGoogle from "./SignInwithGoogle"; // 파일명 대소문자 확인
 
 function Login() {
@@ -25,11 +26,11 @@ function Login() {
     };
 
     return (
-        <form onSubmit={handleSubmit} className="login-form">
-            <h3>Login</h3>
+        <form onSubmit={handleSubmit} className="flexColCenter l-wrapper">
+            <h3 className="loginBox">Login</h3>
 
-            <div className="form-group mb-3">
-                <label>Email address</label>
+            <div className="email-login">
+                <label>Email address </label>
                 <input
                     type="email"
                     className="form-control"
@@ -40,8 +41,8 @@ function Login() {
                 />
             </div>
 
-            <div className="form-group mb-3">
-                <label>Password</label>
+            <div className="password-login">
+                <label>Password </label>
                 <input
                     type="password"
                     className="form-control"
@@ -52,14 +53,14 @@ function Login() {
                 />
             </div>
 
-            <div className="d-grid mb-3">
-                <button type="submit" className="btn btn-primary">
+            <div className="submit-login">
+                <button type="submit" className="button">
                     Submit
                 </button>
             </div>
 
-            <p className="forgot-password text-right">
-                New user? <a href="/Register">Register Here</a>
+            <p className="GoToRegister text-right">
+                New user? <a href="/Register" className="regi">Register Here</a>
             </p>
 
             {/* <SignInwithGoogle /> */}

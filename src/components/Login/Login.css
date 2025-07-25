@@ -1,0 +1,23 @@
+.l-wrapper{
+    margin: 3rem;
+    border-color: black;
+}
+
+.email-login{
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.password-login{
+    margin-bottom: 1rem;
+}
+
+.submit-login{
+    margin-bottom: 1rem;
+}
+
+.regi{
+    margin-left: 20px;
+    color: gray;
+    text-decoration: underline;
+}

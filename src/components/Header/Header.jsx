@@ -4,7 +4,7 @@ import { BiMenuAltRight } from "react-icons/bi";
 import { getMenuStyles } from "../../utils/common";
 import useHeaderColor from "../../hooks/useHeaderColor";
 import OutsideClickHandler from "react-outside-click-handler";
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const Header = () => {
   const [menuOpened, setMenuOpened] = useState(false);
@@ -32,9 +32,7 @@ const Header = () => {
             <a href="#development">Devolopments</a>
             <a href="#skill">Skills</a>
             <a href="#contact">Contact</a>
-            <button className="button">
-              <Link to ="/Login">Log-in</Link>
-            </button>
+            <a href="#certification">Achievements</a>
           </div>
         </OutsideClickHandler>
 

@@ -3,6 +3,7 @@ import './Contact.css';
 import { MdCall } from 'react-icons/md';
 import { BsFillChatDotsFill } from 'react-icons/bs';
 import { HiChatBubbleBottomCenter } from 'react-icons/hi2';
+import { DiNodejsSmall } from "react-icons/di";
 
 const Contact = () => {
   return (
@@ -18,14 +19,14 @@ const Contact = () => {
                         <div className="flexColCenter mode">
                             <div className="flexStart">
                                 <div className="flexCenter icon">
-                                    <MdCall size={25}/>
+                                    <DiNodejsSmall size={25}/>
                                 </div>
                                 <div className="flexColStart detail">
                                     <span>Launguages</span>
-                                    <span>010-8377-3412</span>
+                                    <span className='secondaryText'>css, java</span>
                                 </div>
                             </div>
-                            <div className="flexCenter button">Call Now</div>
+                            <div className="flexCenter button">Detail</div>
                         </div>
 
                         <div className="flexColCenter mode">
@@ -35,10 +36,10 @@ const Contact = () => {
                                 </div>
                                 <div className="flexColStart detail">
                                     <span>FrameWorks</span>
-                                    <span>010-8377-3412</span>
+                                    <span className='secondaryText'>010-8377-3412</span>
                                 </div>
                             </div>
-                            <div className="flexCenter button">Chat Now</div>
+                            <div className="flexCenter button">Detail</div>
                         </div>
 
                         <div className="flexColCenter mode">
@@ -48,10 +49,10 @@ const Contact = () => {
                                 </div>
                                 <div className="flexColStart detail">
                                     <span>Tools</span>
-                                    <span>010-8377-3412</span>
+                                    <span className='secondaryText'>010-8377-3412</span>
                                 </div>
                             </div>
-                            <div className="flexCenter button">Msg Now</div>
+                            <div className="flexCenter button">Detail</div>
                         </div>
                     </div>
 
@@ -63,10 +64,10 @@ const Contact = () => {
                                 </div>
                                 <div className="flexColStart detail">
                                     <span>Databases</span>
-                                    <span>010-8377-3412</span>
+                                    <span className='secondaryText'>010-8377-3412</span>
                                 </div>
                             </div>
-                            <div className="flexCenter button">Video Call Now</div>
+                            <div className="flexCenter button">Detail</div>
                         </div>
 
                         <div className="flexColCenter mode">
@@ -76,10 +77,10 @@ const Contact = () => {
                                 </div>
                                 <div className="flexColStart detail">
                                     <span>Cloud/Server</span>
-                                    <span>010-8377-3412</span>
+                                    <span className='secondaryText'>010-8377-3412</span>
                                 </div>
                             </div>
-                            <div className="flexCenter button">Msg Now</div>
+                            <div className="flexCenter button">Detail</div>
                         </div>
 
                         <div className="flexColCenter mode">
@@ -89,10 +90,10 @@ const Contact = () => {
                                 </div>
                                 <div className="flexColStart detail">
                                     <span>etc</span>
-                                    <span>010-8377-3412</span>
+                                    <span className='secondaryText'>010-8377-3412</span>
                                 </div>
                             </div>
-                            <div className="flexCenter button">Msg Now</div>
+                            <div className="flexCenter button">Detail</div>
                         </div>
                     </div>
                 </div>
